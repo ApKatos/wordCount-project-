@@ -1,0 +1,12 @@
+
+<a href="{% url 'home' %}">Start again with new word counter</a>
+<h1>In your text are {{ count }} words</h1>
+<h2>This is your text</h2>
+{{ thetext }}
+<h2> just a  line break</h2>
+
+
+{% for word, number in dict %}
+    {{ word }} - {{ number }}
+    <br />
+{% endfor %}
